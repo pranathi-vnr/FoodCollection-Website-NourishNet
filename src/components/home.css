@@ -17,3 +17,13 @@
     padding-right: 20px;
     width: 40%;
 }
+.card {
+    width: 300px;
+    height: 500px; /* Fixed height */
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .heading{
+    background-color: rgb(208, 240, 192);
+  }

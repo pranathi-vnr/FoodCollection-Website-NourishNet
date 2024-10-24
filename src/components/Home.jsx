@@ -23,8 +23,8 @@ function Home() {
        <div class="row justify-content-center mt-4" >
          <div class="col-md-4">
           <div class="card">
-          <div class="card-header ">
-                    <center><h2>Are you a donor ?</h2></center>
+          <div class="heading ">
+                    <center><h2 className='m-2'>Are you a donor ?</h2></center>
              </div>
              <div className='card-body'>
               <center>
@@ -38,8 +38,8 @@ function Home() {
          </div>
          <div class="col-md-4">
           <div class="card">
-          <div class="card-header ">
-                    <center><h2>Are you a Receiver ?</h2></center>
+          <div class="heading">
+                    <center><h2 className='m-2'>Are you a Receiver ?</h2></center>
              </div>
              <div className='card-body'>
               <center>
@@ -52,9 +52,9 @@ function Home() {
           </div>
          </div>
          <div class="col-md-4">
-          <div class="card">
-          <div class="card-header ">
-                    <center><h2>Do you want to be a volunteer ?</h2></center>
+          <div class="card" >
+          <div class="heading">
+                    <center><h2 className='m-2'>Do you want to be a volunteer ?</h2></center>
              </div>
              <div className='card-body'>
               <center>
