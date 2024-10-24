@@ -1,7 +1,7 @@
 .top{
     background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAhmSRbehvnXcUZ_Ic50Q3_OsZ-pbE5fVfxw&s');
-    height: 50vh; /* Occupy half the viewport height */
-    background-size: cover; /* Ensure the image covers the entire area */
+    height: 25vh; /* Occupy half the viewport height */
+    background-size:cover; /* Ensure the image covers the entire area */
     background-position: center; /* Center the image */
     background-repeat: no-repeat;
     display: flex; /* Use flexbox for layout */
