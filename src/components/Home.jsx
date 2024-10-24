@@ -6,6 +6,9 @@ function Home() {
     function moveToRegister(){
         navigate('/register')
     }
+    function moveToLogin(){
+      navigate('/login')
+  }
   return (
     <div >
         <div className="top  " >
@@ -17,17 +20,17 @@ function Home() {
         </div>
 
 
-       <div class="row justify-content-center mt-4" onClick={moveToRegister()}>
+       <div class="row justify-content-center mt-4" >
          <div class="col-md-4">
           <div class="card">
-          <div class="card-header ">
-                    <center><h2>Are you a donor ?</h2></center>
+          <div class="heading ">
+                    <center><h2 className='m-2'>Are you a donor ?</h2></center>
              </div>
              <div className='card-body'>
               <center>
-                <button className='btn btn-outline-info d-block mx-auto'>Login</button>
+                <button className='btn btn-outline-info d-block mx-auto' onClick={moveToLogin}>Login</button>
                 <p>Are you a new user</p>
-                <button className='btn btn-outline-info d-block mx-auto'>Donor register</button>
+                <button className='btn btn-outline-info d-block mx-auto' onClick={moveToRegister}>Donor register</button>
 
               </center>
              </div>
@@ -35,29 +38,29 @@ function Home() {
          </div>
          <div class="col-md-4">
           <div class="card">
-          <div class="card-header ">
-                    <center><h2>Are you a Receiver ?</h2></center>
+          <div class="heading">
+                    <center><h2 className='m-2'>Are you a Receiver ?</h2></center>
              </div>
              <div className='card-body'>
               <center>
-                <button className='btn btn-outline-info d-block mx-auto'>Login</button>
+                <button className='btn btn-outline-info d-block mx-auto' onClick={moveToLogin}>Login</button>
                 <p>Are you a new user</p>
-                <button className='btn btn-outline-info d-block mx-auto'>Receiver register</button>
+                <button className='btn btn-outline-info d-block mx-auto' onClick={moveToRegister}>Receiver register</button>
 
               </center>
              </div>
           </div>
          </div>
          <div class="col-md-4">
-          <div class="card">
-          <div class="card-header ">
-                    <center><h2>Do you want to be a volunteer ?</h2></center>
+          <div class="card" >
+          <div class="heading">
+                    <center><h2 className='m-2'>Do you want to be a volunteer ?</h2></center>
              </div>
              <div className='card-body'>
               <center>
-                <button className='btn btn-outline-info d-block mx-auto'>Login</button>
+                <button className='btn btn-outline-info d-block mx-auto' onClick={moveToLogin}>Login</button>
                 <p>Are you a new user</p>
-                <button className='btn btn-outline-info d-block mx-auto'>Volunteer register</button>
+                <button className='btn btn-outline-info d-block mx-auto' onClick={moveToRegister}>Volunteer register</button>
 
               </center>
              </div>
