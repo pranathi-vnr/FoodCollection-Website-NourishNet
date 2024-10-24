@@ -1,0 +1,21 @@
+.top{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAhmSRbehvnXcUZ_Ic50Q3_OsZ-pbE5fVfxw&s');
+    height: 50vh; /* Occupy half the viewport height */
+    background-size: cover; /* Ensure the image covers the entire area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+    display: flex; /* Use flexbox for layout */
+    align-items: center;
+    color: rgb(124, 24, 24);
+}
+.overlay_text{
+    position: absolute;
+    top: 27%;
+    left: 30px;
+    background-color: white;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 40%;
+    box-shadow: 5px 5px 10px gray;
+}
