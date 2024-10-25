@@ -1,8 +1,8 @@
 import React from 'react'
-
+import './Footer.css'
 function Footer() {
   return (
-    <div className='bg-black text-white d-flex justify-content-around p-5'>
+    <div className='footer  d-flex justify-content-around p-5'>
      <div>
     <p className='lead'> Contact:xxxxxx8906</p>
     <p className='lead'>Office:street no:xxx,city:xxxxx,state:xxxxxx</p>

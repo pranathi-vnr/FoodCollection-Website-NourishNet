@@ -17,8 +17,8 @@ function Home() {
         <div>
             <div className="top">
                 <div className="overlay_text text-black ml-20px">
-                    <h1>WELCOME!!</h1>
-                    <h3>Be a part of our community.<br /> Let's work to fill the hungry stomachs</h3>
+                    <h1>W E L C O M E</h1>
+                    <h3>"Turn excess into impact. <br /> Share food, share hope."</h3>
                 </div>
             </div>
             <div className="row justify-content-center mt-4">
@@ -29,23 +29,23 @@ function Home() {
                         </div>
                         <div className='card-body'>
                             <center>
-                                <button className='btn mx-auto' style={{ color: 'white', borderBlockColor: 'white', fontSize: '1.5rem' }} onClick={moveToLogin}>Login</button>
+                                <button className='btn mx-auto' style={{ color: 'white', border: '2px solid white', fontSize: '1.5rem' }} onClick={moveToLogin}>Login</button>
                                 <p>Are you a new user?</p>
-                                <button className='btn mx-auto' style={{ color: 'white', borderBlockColor: 'white', fontSize: '1.5rem' }} onClick={moveToRegister}>Donor register</button>
+                                <button className='btn mx-auto' style={{ color: 'white', border: '2px solid white', fontSize: '1.5rem' }} onClick={moveToRegister}>Donor register</button>
                             </center>
                         </div>
                     </div>
                 </div>
                 <div className="col-md-4">
-                    <div className="card" style={{ backgroundColor: 'rgb(255, 177, 33)', color: 'white' }}> {/* Corrected RGB value */}
+                    <div className="card" style={{ backgroundColor:'#8FBC8B', color: 'white' }}> {/* Corrected RGB value */}
                         <div className="heading">
                             <center><h2 className='m-2'>Are you a Receiver?</h2></center>
                         </div>
                         <div className='card-body'>
                             <center>
-                                <button className='btn mx-auto' style={{ color: 'white', borderBlockColor: 'white', fontSize: '1.5rem' }} onClick={moveToLogin}>Login</button>
+                                <button className='btn mx-auto' style={{ color: 'white', border: '2px solid white', fontSize: '1.5rem' }} onClick={moveToLogin}>Login</button>
                                 <p>Are you a new user?</p>
-                                <button className='btn mx-auto' style={{ color: 'white', borderBlockColor: 'white', fontSize: '1.5rem' }} onClick={moveToRegister}>Receiver register</button>
+                                <button className='btn mx-auto' style={{ color: 'white', border: '2px solid white', fontSize: '1.5rem' }} onClick={moveToRegister}>Receiver register</button>
                             </center>
                         </div>
                     </div>
@@ -57,9 +57,9 @@ function Home() {
                         </div>
                         <div className='card-body'>
                             <center>
-                                <button className='btn d-block mx-auto' style={{ color: 'white', borderBlockColor: 'white', fontSize: '1.5rem' }} onClick={moveToLogin}>Login</button>
+                                <button className='btn d-block mx-auto' style={{ color: 'white', border: '2px solid white', fontSize: '1.5rem' }} onClick={moveToLogin}>Login</button>
                                 <p>Are you a new user?</p>
-                                <button className='btn mx-auto' style={{ color: 'white', borderBlockColor: 'white', fontSize: '1.5rem' }} onClick={moveToRegister}>Volunteer register</button>
+                                <button className='btn mx-auto' style={{ color: 'white', border: '2px solid white', fontSize: '1.5rem' }} onClick={moveToRegister}>Volunteer register</button>
                             </center>
                         </div>
                     </div>
