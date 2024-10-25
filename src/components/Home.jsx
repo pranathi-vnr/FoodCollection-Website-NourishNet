@@ -37,7 +37,7 @@ function Home() {
           </div>
          </div>
          <div class="col-md-4">
-          <div class="card" style={{backgroundColor:'rgb(255, 177, 33)',color:'white'}}>
+          <div class="card" style={{backgroundColor:'rgb(300, 177, 33)',color:'white'}}>
           <div class="heading">
                     <center><h2 className='m-2'>Are you a Receiver ?</h2></center>
              </div>

@@ -4,7 +4,7 @@ import logo1 from '../assets/logo1.jpg'
 import './H1.css'
 function Header() {
   return (
-    <div className='heading'>
+    <div className='heading' >
     <header className='header '>
       <div className='logo-container'>
         <img src={logo1} alt="logo" width={75} className='mx-3 rounded-circle'/>
