@@ -1,9 +1,9 @@
 
 .top{
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAhmSRbehvnXcUZ_Ic50Q3_OsZ-pbE5fVfxw&s');
-    height: 50vh; /* Occupy half the viewport height */
+    background-image: url('https://i.pinimg.com/564x/b7/96/ee/b796eef875118bdf552a61fd64845779.jpg');
+    height: 100vh; 
     background-size: cover; /* Ensure the image covers the entire area */
-    background-position: center; /* Center the image */
+    background-position: right center; /* Center the image */
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
@@ -13,10 +13,9 @@
     position: absolute;
     top: 27%;
     left: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
     width: 40%;
-}
+    margin-left: 0px;
+  }
 .card {
     width: 300px;
     height: 500px; 
@@ -24,6 +23,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin:60px;
   }
+
  
 
  
