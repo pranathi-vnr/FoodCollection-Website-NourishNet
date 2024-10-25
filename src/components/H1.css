@@ -1,8 +1,10 @@
+
 .header {
     display: flex;
     justify-content: space-between; 
     align-items: center; 
-    padding: 10px; 
+    padding: 8px; 
+    
   }
   
   .logo-container {
@@ -16,7 +18,7 @@
   .nav-list {
     list-style: none; 
     display: flex;
-   padding-top: 20px;
+   margin-top: 20px;
    font-size: x-large;
   }
   

@@ -1,10 +1,11 @@
+
 .top{
     background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAhmSRbehvnXcUZ_Ic50Q3_OsZ-pbE5fVfxw&s');
     height: 50vh; /* Occupy half the viewport height */
-    background-size:cover; /* Ensure the image covers the entire area */
+    background-size: cover; /* Ensure the image covers the entire area */
     background-position: center; /* Center the image */
     background-repeat: no-repeat;
-    display: flex; /* Use flexbox for layout */
+    display: flex;
     align-items: center;
     color: rgb(124, 24, 24);
 }
@@ -12,18 +13,17 @@
     position: absolute;
     top: 27%;
     left: 30px;
-    color: whitesmoke;
     padding-left: 20px;
     padding-right: 20px;
     width: 40%;
 }
 .card {
     width: 300px;
-    height: 500px; /* Fixed height */
-    border: 1px solid #ccc;
+    height: 500px; 
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin:60px;
   }
-  .heading{
-    background-color: rgb(208, 240, 192);
-  }
+ 
+
+ 
