@@ -8,6 +8,7 @@ function Header() {
     <header className='header '>
       <div className='logo-container'>
         <img src={logo1} alt="logo" width={75} className='mx-3 rounded-circle'/>
+        <h1>NOURISHNET</h1>
       </div>
       <nav className='nav'>
         <ul className='nav-list' >
