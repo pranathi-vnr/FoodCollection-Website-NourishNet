@@ -7,8 +7,8 @@ function Footer() {
       <footer>
         <div className="footer-container">
           <div className="footer-section donations">
-            <h3>DONATIONS</h3>
-            <p>Currently My Angels academy supports 300+ underprivileged children with items like sports equipments, books, stationery, nutrition, clothes, jerseys, conveyance, medical and other day-to-day needs. Every month substantial amount is required to carry out these activities.</p>
+            <h3>ABOUT US</h3>
+            <p> Our mission is to create a sustainable food system that connects excess food from donors to those in need in our community. By establishing local food hubs, we aim to reduce food waste while providing nutritious meals to individuals and families who may be facing food insecurity.</p>
             <p>Click the below button if you wish to Donate.</p>
             <button className="donate-button">DONATE</button>
           </div>
