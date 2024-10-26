@@ -47,13 +47,9 @@ function Login() {
      
       
         <div className="mt-4">
-<<<<<<< HEAD
-          <h1 className="display-3 text-center text-secondary">User Login</h1>
-=======
           <h1 className="display-3 text-center text-secondary">
              Login
           </h1>
->>>>>>> 0e5d966eebe6fc1dbc1d7d20df8cc1fb8f56e6f8
           
           {/* Display login error message if any */}
           {loginErr && <p className='text-danger fs-4 text-center'>{loginErr.message}</p>}
