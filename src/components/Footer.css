@@ -3,67 +3,50 @@
   color:#006400;
 } */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-}
-
-footer {
-  background-color:#ACE1AF;
-  color: black;
-  padding: 20px 0;
-}
+/* Footer.css */
 
 .footer-container {
   display: flex;
   justify-content: space-around;
-  max-width: 1200px;
-  margin: 0 auto;
+  background-color:#ACE1AF;
+  color:black;
+  padding: 20px 0;
 }
 
 .footer-section {
   flex: 1;
-  padding: 0 20px;
+  margin: 0 20px;
 }
 
 .footer-section h3 {
+  font-size: 1.2em;
   margin-bottom: 15px;
-  font-size: 18px;
-  font-weight: bold;
 }
 
 .footer-section p, .footer-section address {
-  font-size: 14px;
+  font-size: 0.9em;
   line-height: 1.6;
 }
 
 .donate-button, .subscribe-button {
-  background-color: #ffc107;
-  color: #333;
+  background-color: #f0a500;
+  color: #fff;
   border: none;
   padding: 10px 20px;
   cursor: pointer;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.donate-button {
+  font-size: 0.9em;
   margin-top: 10px;
 }
 
+.donate-button:hover, .subscribe-button:hover {
+  background-color: #d48c00;
+}
+
 .newsletter input[type="email"] {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  outline: none;
+  padding: 8px;
+  width: 80%;
+  margin-top: 10px;
+  font-size: 0.9em;
 }
 
 .social-icons {
@@ -71,12 +54,12 @@ footer {
 }
 
 .social-icons a {
-  color: #ffc107;
-  font-size: 20px;
-  margin-right: 10px;
+  color: #fff;
+  font-size: 1.5em;
+  margin-right: 15px;
   text-decoration: none;
 }
 
 .social-icons a:hover {
-  color: #fff;
+  color: #f0a500;
 }

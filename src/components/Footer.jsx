@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF, faInstagram, faLinkedinIn, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import './Footer.css';
 
 function Footer() {
@@ -33,10 +35,10 @@ function Footer() {
               Vasundhara Enclave Delhi 110096
             </address>
             <div className="social-icons">
-              <a href="#"><i className="fab fa-facebook-f"></i></a>
-              <a href="#"><i className="fab fa-instagram"></i></a>
-              <a href="#"><i className="fab fa-linkedin-in"></i></a>
-              <a href="#"><i className="fab fa-youtube"></i></a>
+              <a href="#"><FontAwesomeIcon icon={faFacebookF} /></a>
+              <a href="#"><FontAwesomeIcon icon={faInstagram} /></a>
+              <a href="#"><FontAwesomeIcon icon={faLinkedinIn} /></a>
+              <a href="#"><FontAwesomeIcon icon={faYoutube} /></a>
             </div>
           </div>
         </div>
