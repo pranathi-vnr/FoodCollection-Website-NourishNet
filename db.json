@@ -26,7 +26,6 @@
     }
   ],
   "donations": [
-   
     {
       "id": "e2fe",
       "foodDetails": "Fresh Produce",
@@ -58,7 +57,54 @@
       "quantity": "100",
       "expiration": "2024-11-06",
       "condition": "Fresh"
+    },
+    {
+      "id": "f987",
+      "foodDetails": "Packaged",
+      "food": "biscuits",
+      "quantity": "150",
+      "expiration": "2024-11-09",
+      "condition": "Near Expiry"
+    },
+    {
+      "id": "57b3",
+      "foodDetails": "Prepared Meals",
+      "food": "potato fry",
+      "quantity": "70",
+      "expiration": "2024-11-10",
+      "condition": "Fresh"
+    },
+    {
+      "id": "441d",
+      "foodDetails": "",
+      "food": "roti",
+      "quantity": "70",
+      "expiration": "2024-10-24",
+      "condition": "Fresh"
+    },
+    {
+      "id": "4529",
+      "foodDetails": "",
+      "food": "ice cream",
+      "quantity": "50",
+      "expiration": "2024-11-01",
+      "condition": "Frozen"
+    },
+    {
+      "id": "bfaf",
+      "foodDetails": "Fresh Produce",
+      "food": "roti",
+      "quantity": "50",
+      "expiration": "2024-11-06",
+      "condition": "Fresh"
+    },
+    {
+      "id": "adfa",
+      "foodDetails": "Fresh Produce",
+      "food": "burger",
+      "quantity": "14",
+      "expiration": "2024-10-29",
+      "condition": "Near Expiry"
     }
-    
   ]
 }

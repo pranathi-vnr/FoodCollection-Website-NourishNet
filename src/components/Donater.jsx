@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import './donater.css'; // We'll use a separate CSS file for styling
 import { useLocation } from 'react-router-dom';
 import {useForm} from 'react-hook-form';
-
+import { useNavigate } from 'react-router-dom';
 function DonorPage () {
+    const navigate=useNavigate();
   const [foodDetails, setFoodDetails] = useState({
     foodType: '',
     quantity: '',
@@ -13,6 +14,7 @@ function DonorPage () {
     qualityAssured: false,
   });
   const obj = useLocation();
+  const [err,setErr]=useState()
   const [currentUser, setCurrentUser] = useState(obj.state);
   const {register,handleSubmit,formState:{errors}}=useForm()
   function handleFormSubmit (newDonation) {
@@ -29,7 +31,7 @@ function DonorPage () {
         }).then(res=>{
            if(res.status===201){
             console.log(newDonation)
-              navigate('/login')
+              navigate('/thankyou')
            }else{
               setErr({message:res.message})
            }
