@@ -6,13 +6,18 @@ function Login() {
   const { register, handleSubmit, formState: { errors } } = useForm();
   const navigate = useNavigate();
   const [loginErr, setLoginErr] = useState(null);
+<<<<<<< HEAD
   const [loading, setLoading] = useState(false); // Loading state
+=======
+  const {loginStatus,setLoginStatus}=useState(false);
+>>>>>>> 0e5d966eebe6fc1dbc1d7d20df8cc1fb8f56e6f8
 
   // Function to handle form submission and verify user credentials
   async function handleFormSubmit(newUser) {
     const { username, password } = newUser;
     setLoading(true); // Set loading state
 
+<<<<<<< HEAD
     try {
       const response = await fetch(`http://localhost:3000/users?username=${username}&password=${password}`);
       const userObj = await response.json();
@@ -27,6 +32,29 @@ function Login() {
     } finally {
       setLoading(false); // Reset loading state
     }
+=======
+    fetch(`http://localhost:3000/users?username=${username}&password=${password}`)
+      .then(res => res.json())
+      .then(userObj => {
+        if (userObj.length === 0) {
+          setLoginErr({ message: "Username or password invalid" });
+        } else {
+          setLoginStatus(true)
+         if(userObj.role=='volunteer'){
+          <Header loginStatus={loginStatus} />
+          navigate('/volunteer', { state: userObj[0] });
+         }else if(userObj.role=='donor'){
+          <Header loginStatus={loginStatus} />
+          navigate('/donoter', { state: userObj[0] });
+         }
+         else{
+          <Header loginStatus={loginStatus} />
+          navigate('/receiver', { state: userObj[0] });
+         }
+        }
+      })
+      .catch(err => setLoginErr({ message: "Network error" }));
+>>>>>>> 0e5d966eebe6fc1dbc1d7d20df8cc1fb8f56e6f8
   }
 
   return (
@@ -36,7 +64,13 @@ function Login() {
       </div>
       <div className='col-md-6'>
         <div className="mt-4">
+<<<<<<< HEAD
           <h1 className="display-3 text-center text-secondary">User Login</h1>
+=======
+          <h1 className="display-3 text-center text-secondary">
+             Login
+          </h1>
+>>>>>>> 0e5d966eebe6fc1dbc1d7d20df8cc1fb8f56e6f8
           
           {/* Display login error message if any */}
           {loginErr && <p className='text-danger fs-4 text-center'>{loginErr.message}</p>}
@@ -71,6 +105,7 @@ function Login() {
             <button className="btn btn-outline-info d-block mx-auto" type="submit" disabled={loading}>
               {loading ? 'Logging in...' : 'Login'} {/* Show loading text */}
             </button>
+            
           </form>
         </div>    
       </div>

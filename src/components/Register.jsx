@@ -31,6 +31,7 @@ function Register() {
           body:JSON.stringify(newUser)
         }).then(res=>{
            if(res.status===201){
+            console.log(newUser)
               navigate('/login')
            }else{
               setErr({message:res.message})
@@ -104,10 +105,11 @@ function Register() {
         {/* select what you want to be */}
         <div className="mt-5">
           <label htmlFor="ch" className="form-lable">Choose your role</label>
-          <select  id="ch">
+          <select   id="ch"
+    {...register("role", { required: true })}   className="form-select">
           <option value="select" selected disabled hidden>select</option>
               <option value="Donor">Donor</option>
-              <option value="Receiver">Receiver</option>
+              <option value="Receiver">Receiver</option> 
               <option value="Volunteer">Volunteer</option>
           </select>
         </div>
