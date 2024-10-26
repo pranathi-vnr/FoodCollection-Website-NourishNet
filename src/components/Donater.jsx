@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './DonorPage.css'; // We'll use a separate CSS file for styling
+import './donater.css'; // We'll use a separate CSS file for styling
 
 const DonorPage = () => {
   const [foodDetails, setFoodDetails] = useState({
