@@ -51,7 +51,7 @@ function Home() {
                     </div>
                 </div>
                 <div className="col-md-4">
-                    <div className="card" style={{ backgroundColor: 'rgb(67, 180, 67)', color: 'white' }}>
+                    <div className="card" style={{ backgroundColor: 'rgb(40, 146, 40)', color: 'white' }}>
                         <div className="heading">
                             <center><h2 className='m-2'>Do you want to be a volunteer?</h2></center>
                         </div>
