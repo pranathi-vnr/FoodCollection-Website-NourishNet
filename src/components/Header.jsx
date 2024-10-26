@@ -17,6 +17,9 @@ function Header({loginStatus} ) {
           <li className="nav-item ml-2">
             <Link to="donate" className='nav-link ' style={{color: 'rgb(60, 87, 12)'}}>Donate Fund</Link>
           </li>
+          <li className="nav-item ml-2">
+            <Link to="login" className='nav-link ' style={{color: 'rgb(60, 87, 12)'}}>Login</Link>
+          </li>
          
         </ul>
       </nav>
