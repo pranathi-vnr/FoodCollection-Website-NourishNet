@@ -6,6 +6,21 @@
       "password": "123456",
       "email": "Chandrikamandalapu4@gmail.com",
       "dob": "2024-10-25"
+    },
+    {
+      "id": "f303",
+      "username": "sruthikancharla",
+      "password": "sruthi06",
+      "email": "ramkan8@gmail.com",
+      "dob": "2024-11-06"
+    },
+    {
+      "id": "76b8",
+      "username": "induuuuuu",
+      "password": "123456789",
+      "email": "ramkan8@gmail.com",
+      "dob": "2024-11-01",
+      "role": "Receiver"
     }
   ]
 }

@@ -6,6 +6,7 @@ function Login() {
   const { register, handleSubmit, formState: { errors } } = useForm();
   const navigate = useNavigate();
   const [loginErr, setLoginErr] = useState(null);
+  const {loginStatus,setLoginStatus}=useState(false);
 
   // Function to handle form submission and verify user credentials
   function handleFormSubmit(newUser) {
@@ -17,7 +18,18 @@ function Login() {
         if (userObj.length === 0) {
           setLoginErr({ message: "Username or password invalid" });
         } else {
+          setLoginStatus(true)
+         if(userObj.role=='volunteer'){
+          <Header loginStatus={loginStatus} />
+          navigate('/volunteer', { state: userObj[0] });
+         }else if(userObj.role=='donor'){
+          <Header loginStatus={loginStatus} />
+          navigate('/donoter', { state: userObj[0] });
+         }
+         else{
+          <Header loginStatus={loginStatus} />
           navigate('/receiver', { state: userObj[0] });
+         }
         }
       })
       .catch(err => setLoginErr({ message: "Network error" }));
@@ -31,7 +43,7 @@ function Login() {
       <div className='col-md-6'>
         <div className="mt-4">
           <h1 className="display-3 text-center text-secondary">
-            User Login
+             Login
           </h1>
           
           {/* Display login error message if any */}
@@ -70,6 +82,7 @@ function Login() {
             <button className="btn btn-outline-info d-block mx-auto" type="submit">
               Login
             </button>
+            
           </form>
         </div>    
       </div>
