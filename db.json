@@ -105,6 +105,14 @@
       "quantity": "14",
       "expiration": "2024-10-29",
       "condition": "Near Expiry"
+    },
+    {
+      "id": "4a05",
+      "foodDetails": "Bakery",
+      "food": "pastry",
+      "quantity": "70",
+      "expiration": "2024-11-06",
+      "condition": "Fresh"
     }
   ]
 }
