@@ -1,16 +1,27 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import {useForm} from 'react-hook-form';
 import {useNavigate} from 'react-router-dom';
-import {useState} from 'react'
+
 
 import register2 from '../assets/register2.jpg'
 function Register() {
   const {register,handleSubmit,formState:{errors}}=useForm()
   const navigate=useNavigate();
   const [err,setErr]=useState(null)
+  const [currentImage, setCurrentImage] = useState(0);
+
+  const images = [register2, register2,register2];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prevImage) => (prevImage + 1) % images.length);
+    }, 2000); 
+
+    return () => clearInterval(interval);
+  }, []);
 
   function handleFormSubmit(newUser){
-    //make HTTP POST req
+
     fetch('http://localhost:3000/users',
         {
           method:"POST",
@@ -30,7 +41,7 @@ function Register() {
   return (
     <div className='row'>
       <div className='col-md-6'>
-        <img src={register2} alt="" style={{width:'600px'}} />
+      <img src={images[currentImage]} alt="register" style={{ width: '600px' }} />
         </div>  
 
         <div className='col-md-6 mt-5'>

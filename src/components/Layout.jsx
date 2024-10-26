@@ -8,7 +8,7 @@ function Layout() {
     <div>
         <Header />
       {/* placeholder of dynamic component loading */}
-      <div style={{minHeight:'110vh'}} className="container-fluid">
+      <div style={{minHeight:'110vh'}}>
         <Outlet />
       </div>
       <Footer />
