@@ -8,7 +8,6 @@ function Header() {
     <header className='header '>
       <div className='logo-container'>
         <img src={logo1} alt="logo" width={75} className='mx-3 rounded-circle'/>
-        <h1>NOURISHNET</h1>
       </div>
       <nav className='nav'>
         <ul className='nav-list' >
@@ -16,10 +15,10 @@ function Header() {
             <Link to="" className='nav-link ' style={{  color: 'rgb(60, 87, 12)'}}>Home</Link>
           </li>
           <li className="nav-item ml-2">
-            <Link to="register" className='nav-link ' style={{color: 'rgb(60, 87, 12)'}}>Register</Link>
+            <Link to="donate" className='nav-link ' style={{color: 'rgb(60, 87, 12)'}}>Donate Fund</Link>
           </li>
           <li className="nav-item ml-2">
-            <Link to="login" className='nav-link btn ' style={{color: 'white', background:'rgb(107, 142, 35)'}}>Login</Link>
+            <Link to="login" className='nav-link btn 'style={{color: 'rgb(60, 87, 12)'}}>Login</Link>
           </li>
         </ul>
       </nav>

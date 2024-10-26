@@ -1,0 +1,213 @@
+/* Container for both cards */
+.donation-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Align cards to the right */
+  gap: 30px;
+  padding: 20px;
+  max-width: 500px; /* Reduce the max-width for narrower cards */
+  margin-left: auto; /* Align container to the right */
+}
+
+/* Common Card Styling */
+.donation-card, .details-card {
+  width: 100%;
+  padding: 25px;
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+/* Card Headers */
+.donation-card h2, .details-card h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Citizenship Section */
+.citizenship-section {
+  margin-bottom: 20px;
+}
+
+.citizenship-section label {
+  font-weight: 600;
+  color: #555;
+}
+
+.options {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.option {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  transition: 0.3s;
+}
+
+.option.selected {
+  background-color: #FFD700;
+  color: #fff;
+  border-color: #FFD700;
+}
+
+.info-text {
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 10px;
+}
+
+/* Donation Type Section */
+.donation-type-section {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.donation-type {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.donation-type.selected {
+  background-color: #FFD700;
+  color: #fff;
+  border-color: #FFD700;
+}
+
+/* Amount Section */
+.amount-section p {
+  font-weight: 600;
+  color: #555;
+}
+
+.amount-options {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.amount-option {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  transition: 0.3s;
+}
+
+.amount-option.selected {
+  background-color: #FFD700;
+  color: #fff;
+  border-color: #FFD700;
+}
+
+.info-section {
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 15px;
+}
+
+/* Other Amount Input */
+.other-amount-section {
+  margin-top: 15px;
+}
+
+.other-amount-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+/* Form Section in Details Card */
+.form-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.form-section label {
+  font-weight: 500;
+  color: #555;
+}
+
+.form-section input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Full-width fields */
+.form-section label[for="address"],
+.form-section label[for="email"],
+.form-section label[for="mobile"],
+.form-section label[for="pan"] {
+  grid-column: span 2;
+}
+
+.form-section input[type="text"], .form-section input[type="email"], .form-section input[type="tel"], .form-section input[type="date"] {
+  grid-column: span 2;
+}
+
+/* Disclaimer */
+.disclaimer {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #555;
+  display: flex;
+  align-items: center;
+}
+
+.disclaimer input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Payment Button */
+.payment-button {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.2rem;
+  background-color: #FFD700;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+.payment-button:hover {
+  background-color: #f2c700;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .form-section {
+    grid-template-columns: 1fr;
+  }
+
+  .amount-options {
+    flex-wrap: wrap;
+  }
+}
+
