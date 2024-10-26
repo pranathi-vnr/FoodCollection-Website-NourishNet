@@ -7,6 +7,9 @@ import Register from './components/Register'
 import Donate from './components/Donate';
 import Login from './components/Login'
 import Layout from './components/Layout';
+import Donater from './components/Donater';
+import Receiver from './components/Receiver';
+import Volunteer from './components/Volunteer';
 function App() {
   const browserRouterObj = createBrowserRouter([
     {
@@ -28,6 +31,18 @@ function App() {
         {
           path:"login",
           element:<Login />
+        },
+        {
+          path:"donater",
+          element:<Donater />
+        },
+        {
+          path:"receiver",
+          element:<Receiver />
+        },
+        {
+          path:"volunteer",
+          element:<Volunteer />
         }
        ]
     }
