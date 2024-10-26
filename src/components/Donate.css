@@ -1,17 +1,16 @@
 /* Container for both cards */
 .donation-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end; /* Align cards to the right */
-  gap: 30px;
+  display: grid;
+  grid-template-columns: 1fr; /* Single column layout */
+  gap: 30px; /* Space between items */
   padding: 20px;
-  max-width: 500px; /* Reduce the max-width for narrower cards */
-  margin-left: auto; /* Align container to the right */
+  max-width: 500px; /* Set max width for the container */
+  margin: 0 auto; /* Center align the container */
 }
 
 /* Common Card Styling */
 .donation-card, .details-card {
-  width: 100%;
+  width: 100%; /* Set width to 100% to occupy full width of the container */
   padding: 25px;
   border: 1px solid #e2e2e2;
   border-radius: 10px;
@@ -25,7 +24,7 @@
   font-weight: 600;
   color: #333;
   margin-bottom: 20px;
-  text-align: center;
+  text-align: center; /* Center align the header text */
 }
 
 /* Citizenship Section */
@@ -81,7 +80,7 @@
   cursor: pointer;
   background-color: #f9f9f9;
   transition: 0.3s;
-  text-align: center;
+  text-align: center; /* Center align text within the donation type */
 }
 
 .donation-type.selected {
@@ -162,11 +161,14 @@
 .form-section label[for="email"],
 .form-section label[for="mobile"],
 .form-section label[for="pan"] {
-  grid-column: span 2;
+  grid-column: span 2; /* Make these labels span two columns */
 }
 
-.form-section input[type="text"], .form-section input[type="email"], .form-section input[type="tel"], .form-section input[type="date"] {
-  grid-column: span 2;
+.form-section input[type="text"],
+.form-section input[type="email"],
+.form-section input[type="tel"],
+.form-section input[type="date"] {
+  grid-column: span 2; /* Make these inputs span two columns */
 }
 
 /* Disclaimer */
@@ -203,11 +205,19 @@
 /* Responsive Design */
 @media (max-width: 600px) {
   .form-section {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Stack fields in a single column on small screens */
   }
 
   .amount-options {
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Allow amount options to wrap */
   }
 }
 
+/* Impact Stats Container */
+.impact-stats-container {
+  display: flex;
+  flex-direction: row; /* Align items in a horizontal row */
+  gap: 20px; /* Space between impact cards */
+  justify-content: space-between; /* Space out the items evenly */
+  flex-wrap: wrap; /* Allow items to wrap if necessary */
+}

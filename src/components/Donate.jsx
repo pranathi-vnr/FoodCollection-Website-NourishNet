@@ -78,7 +78,7 @@ function Donate() {
         </div>
       </div>
 
-      {/* New Card Below the Old Card */}
+    <div >
       <div className="details-card">
         <h2>Donor Details</h2>
         
@@ -112,13 +112,14 @@ function Donate() {
         </div>
 
         <div className="disclaimer">
-          <p>Information is being collected to comply with government regulations...</p>
           <input type="checkbox" />
           <label>I hereby declare I am a citizen of India...</label>
+          <p>Information is being collected to comply with government regulations...</p>
         </div>
 
         <button className="payment-button">Continue To Payment</button>
       </div>
+    </div>
     </div>
   );
 }
