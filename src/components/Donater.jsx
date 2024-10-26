@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './donater.css'; // We'll use a separate CSS file for styling
-
-const DonorPage = () => {
+import { useLocation } from 'react-router-dom';
+function DonorPage () {
   const [foodDetails, setFoodDetails] = useState({
     foodType: '',
     quantity: '',
@@ -10,7 +10,8 @@ const DonorPage = () => {
     storage: '',
     qualityAssured: false,
   });
-
+  const obj = useLocation();
+  const [currentUser, setCurrentUser] = useState(obj.state);
   const handleSubmit = (event) => {
     event.preventDefault();
     // Logic to handle form submission, e.g., send data to the server
@@ -19,6 +20,9 @@ const DonorPage = () => {
 
   return (
     <div className="donor-page">
+        <div >
+            <h3 className='p-3'>Hey! {currentUser.username} I'am glad you are back....</h3>
+        </div>
       <div className="guide-section">
         <h2>Donor Guidelines</h2>
         <p>

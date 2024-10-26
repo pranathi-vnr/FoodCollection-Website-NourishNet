@@ -12,10 +12,7 @@ function Home() {
         navigate('/register');
     }
 
-    function moveToLogin() {
-        navigate('/login');
-    }
-
+ 
     return (
         <div>
             <div className="top">

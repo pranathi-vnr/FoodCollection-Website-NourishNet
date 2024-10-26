@@ -5,7 +5,7 @@ function Donate() {
   const [citizenship, setCitizenship] = useState('Indian');
   const [donationType, setDonationType] = useState('once');
   const [amount, setAmount] = useState(4000);
-
+  const {register,handleSubmit,formState:{errors}}=useForm()
   return (
     <div className="donation-container">
       {/* First Card */}
