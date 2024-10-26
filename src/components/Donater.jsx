@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './donater.css'; // We'll use a separate CSS file for styling
 import { useLocation } from 'react-router-dom';
+import {useForm} from 'react-hook-form';
+
 function DonorPage () {
   const [foodDetails, setFoodDetails] = useState({
     foodType: '',
@@ -12,10 +14,26 @@ function DonorPage () {
   });
   const obj = useLocation();
   const [currentUser, setCurrentUser] = useState(obj.state);
-  const handleSubmit = (event) => {
-    event.preventDefault();
+  const {register,handleSubmit,formState:{errors}}=useForm()
+  function handleFormSubmit (newDonation) {
+    
     // Logic to handle form submission, e.g., send data to the server
     console.log('Food Donation:', foodDetails);
+    fetch('http://localhost:3000/donations',
+        {
+          method:"POST",
+          headers:{
+            "Content-Type":"application/json"
+          },
+          body:JSON.stringify(newDonation)
+        }).then(res=>{
+           if(res.status===201){
+            console.log(newDonation)
+              navigate('/login')
+           }else{
+              setErr({message:res.message})
+           }
+        }).catch(err=>setErr(err));
   };
 
   return (
@@ -36,12 +54,13 @@ function DonorPage () {
         </ul>
       </div>
 
-      <form className="donation-form" onSubmit={handleSubmit}>
+      <form className="donation-form" onSubmit={handleSubmit(handleFormSubmit)}>
         <h3>Food Donation Form</h3>
         
         <label>
           Food Type:
-          <select value={foodDetails.foodType} onChange={(e) => setFoodDetails({ ...foodDetails, foodType: e.target.value })}>
+          <select value={foodDetails.foodType}
+          {...register("foodDetails")} onChange={(e) => setFoodDetails({ ...foodDetails, foodType: e.target.value })}>
             <option value="">Select Food Type</option>
             <option value="Fresh Produce">Fresh Produce</option>
             <option value="Bakery">Bakery</option>
@@ -49,21 +68,23 @@ function DonorPage () {
             <option value="Prepared Meals">Prepared Meals</option>
           </select>
         </label>
-        
+        <br />
+        <label htmlFor="food">What food:</label>
+        <input type="text" {...register("food")} />
         <label>
           Quantity:
-          <input type="text" value={foodDetails.quantity} onChange={(e) => setFoodDetails({ ...foodDetails, quantity: e.target.value })} required />
+          <input type="text" {...register("quantity")} onChange={(e) => setFoodDetails({ ...foodDetails, quantity: e.target.value })} required />
         </label>
         
         <label>
           Expiration Date (if applicable):
-          <input type="date" value={foodDetails.expirationDate} onChange={(e) => setFoodDetails({ ...foodDetails, expirationDate: e.target.value })} />
+          <input type="date" {...register("expiration")} onChange={(e) => setFoodDetails({ ...foodDetails, expirationDate: e.target.value })} />
         </label>
         
         <h3>Food Quality Check</h3>
         <label>
           Condition:
-          <select value={foodDetails.condition} onChange={(e) => setFoodDetails({ ...foodDetails, condition: e.target.value })}>
+          <select value={foodDetails.condition} {...register("condition")} onChange={(e) => setFoodDetails({ ...foodDetails, condition: e.target.value })}>
             <option value="">Select Condition</option>
             <option value="Fresh">Fresh</option>
             <option value="Near Expiry">Near Expiry</option>

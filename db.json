@@ -24,5 +24,41 @@
       "dob": "2024-10-16",
       "role": "Donor"
     }
+  ],
+  "donations": [
+   
+    {
+      "id": "e2fe",
+      "foodDetails": "Fresh Produce",
+      "food": "cake",
+      "quantity": "1",
+      "expiration": "2024-10-29",
+      "condition": "Fresh"
+    },
+    {
+      "id": "e84e",
+      "foodDetails": "Fresh Produce",
+      "food": "rice",
+      "quantity": "50",
+      "expiration": "2024-10-22",
+      "condition": "Fresh"
+    },
+    {
+      "id": "e5b8",
+      "foodDetails": "Fresh Produce",
+      "food": "dal",
+      "quantity": "40",
+      "expiration": "2024-11-06",
+      "condition": "Near Expiry"
+    },
+    {
+      "id": "e38a",
+      "foodDetails": "Prepared Meals",
+      "food": "tomato rice",
+      "quantity": "100",
+      "expiration": "2024-11-06",
+      "condition": "Fresh"
+    }
+    
   ]
 }
