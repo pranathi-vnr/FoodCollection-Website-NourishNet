@@ -1,5 +1,11 @@
 {
-    "users":{
-        
+  "users": [
+    {
+      "id": "0ab5",
+      "username": "sruthikancharla",
+      "password": "123456",
+      "email": "Chandrikamandalapu4@gmail.com",
+      "dob": "2024-10-25"
     }
+  ]
 }
