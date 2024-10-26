@@ -1,6 +1,9 @@
 import React from 'react';
 import './home.css';
 import { useNavigate } from 'react-router-dom';
+import register5 from "../assets/register5.png"
+import register6 from "../assets/register6.jpg"
+import register7 from "../assets/register7.jpg"
 
 function Home() {
     const navigate = useNavigate();
@@ -29,8 +32,7 @@ function Home() {
                         </div>
                         <div className='card-body'>
                             <center>
-                            <img src="your-image-url.jpg" alt="Donor" style={{ width: '100px', height: '100px', borderRadius: '50%', marginBottom: '1rem' }} />
-                                <button className='btn mx-auto' style={{ color: 'white', border: '2px solid white', fontSize: '1.5rem' }} onClick={moveToLogin}>Login</button>
+                            <img src={register5} alt="Donor" style={{ width: '80px', height: '80px', borderRadius: '50%', marginBottom: '1rem' }} />
                                 <p>Are you a new user?</p>
                                 <button className='btn mx-auto' style={{ color: 'white', border: '2px solid white', fontSize: '1.5rem' }} onClick={moveToRegister}>Donor register</button>
                             </center>
@@ -44,7 +46,7 @@ function Home() {
                         </div>
                         <div className='card-body'>
                             <center>
-                                <button className='btn mx-auto' style={{ color: 'white', border: '2px solid white', fontSize: '1.5rem' }} onClick={moveToLogin}>Login</button>
+                            <img src={register6} alt="Donor" style={{ width: '80px', height: '80px', borderRadius: '50%', marginBottom: '1rem' }} />
                                 <p>Are you a new user?</p>
                                 <button className='btn mx-auto' style={{ color: 'white', border: '2px solid white', fontSize: '1.5rem' }} onClick={moveToRegister}>Receiver register</button>
                             </center>
@@ -58,7 +60,7 @@ function Home() {
                         </div>
                         <div className='card-body'>
                             <center>
-                                <button className='btn d-block mx-auto' style={{ color: 'white', border: '2px solid white', fontSize: '1.5rem' }} onClick={moveToLogin}>Login</button>
+                            <img src={register7} alt="Donor" style={{ width: '80px', height: '80px', borderRadius: '50%', marginBottom: '1rem' }} />
                                 <p>Are you a new user?</p>
                                 <button className='btn mx-auto' style={{ color: 'white', border: '2px solid white', fontSize: '1.5rem' }} onClick={moveToRegister}>Volunteer register</button>
                             </center>
