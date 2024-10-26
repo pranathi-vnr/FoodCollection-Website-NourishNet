@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import { createBrowserRouter, RouterProvider ,Navigate} from "react-router-dom";
 import Home from './components/Home'
 import Register from './components/Register'
-import Donate from './components/Donate'
+import Donate from './components\Donate.jsx';
 import Login from './components/Login'
 import Layout from './components/Layout'
 function App() {
