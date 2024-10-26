@@ -29,6 +29,7 @@ function Home() {
                         </div>
                         <div className='card-body'>
                             <center>
+                            <img src="your-image-url.jpg" alt="Donor" style={{ width: '100px', height: '100px', borderRadius: '50%', marginBottom: '1rem' }} />
                                 <button className='btn mx-auto' style={{ color: 'white', border: '2px solid white', fontSize: '1.5rem' }} onClick={moveToLogin}>Login</button>
                                 <p>Are you a new user?</p>
                                 <button className='btn mx-auto' style={{ color: 'white', border: '2px solid white', fontSize: '1.5rem' }} onClick={moveToRegister}>Donor register</button>
