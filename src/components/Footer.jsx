@@ -29,10 +29,7 @@ function Footer() {
               New Delhi – 110018 Delhi, India<br /><br />
               Email : myangelsacademy@gmail.com<br />
               Landline: 011 – 47039983,<br />
-              Mobile: +91 7701927625, +91 9654793872<br /><br />
-              Registered Office:<br />
-              31, Naval apartment,<br />
-              Vasundhara Enclave Delhi 110096
+              Mobile: +91 7701927625, +91 9654793872<br />
             </address>
             <div className="social-icons">
               <a href="#"><FontAwesomeIcon icon={faFacebookF} /></a>
