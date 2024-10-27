@@ -113,6 +113,14 @@
       "quantity": "70",
       "expiration": "2024-11-06",
       "condition": "Fresh"
+    },
+    {
+      "id": "2b16",
+      "foodDetails": "Fresh Produce",
+      "food": "chicken",
+      "quantity": "40",
+      "expiration": "2024-10-28",
+      "condition": "Near Expiry"
     }
   ]
 }
