@@ -11,6 +11,7 @@ import Donater from './components/Donater';
 import Receiver from './components/Receiver';
 import Volunteer from './components/Volunteer';
 import Thankyou from './components/Thankyou';
+import Map from './components/Map';
 function App() {
   const browserRouterObj = createBrowserRouter([
     {
@@ -47,6 +48,10 @@ function App() {
         },{
           path:"thankyou",
           element:<Thankyou/>
+        },
+        {
+          path:'map',
+          element:<Map/>
         }
        ]
     }
