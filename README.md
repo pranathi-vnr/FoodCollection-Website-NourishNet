@@ -39,25 +39,25 @@ npm run dev
 ### Screenshots
 
 #### About Page  
-![About](screenshots/About.png)
+![About](Screenshots/About.png)
 
 #### Login Page  
-![Login](screenshots/Login.png)
+![Login](Screenshots/Login.png)
 
 #### Welcome Page  
-![Welcome](screenshots/Welcome.png)
+![Welcome](Screenshots/Welcome.png)
 
 #### Donor Details Page  
-![Donor Details](screenshots/donar details.png)
+![Donor Details](Screenshots/donardetails.png)
 
 #### Donate Money Page  
-![Donate Money](screenshots/donate money.png)
+![Donate Money](Screenshots/donatemoney.png)
 
 #### Locations Page  
-![Locations](screenshots/locations.png)
+![Locations](Screenshots/locations.png)
 
 #### Register Page  
-![Register](screenshots/register.png)
+![Register](Screenshots/register.png)
 
 
 
