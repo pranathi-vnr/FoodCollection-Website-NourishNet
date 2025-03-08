@@ -38,26 +38,36 @@ npm run dev
 ```
 ### Screenshots
 
-#### About Page  
-![About](Screenshots/About.png)
 
-#### Login Page  
-![Login](Screenshots/Login.png)
 
 #### Welcome Page  
 ![Welcome](Screenshots/Welcome.png)
 
-#### Donor Details Page  
-![Donor Details](Screenshots/donardetails.png)
+
+#### Login Page  
+![Login](Screenshots/Login.png)
+
+
+#### Register
+![Register](Screenshots/register.png)
+
+
+#### About Page  
+![About](Screenshots/About.png)
+
 
 #### Donate Money Page  
 ![Donate Money](Screenshots/donatemoney.png)
 
+
+#### Donor Details 
+![Donor Details](Screenshots/donardetails.png)
+
+
 #### Locations Page  
 ![Locations](Screenshots/locations.png)
 
-#### Register Page  
-![Register](Screenshots/register.png)
+
 
 
 
