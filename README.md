@@ -52,7 +52,7 @@ npm run dev
 ![Register](Screenshots/register.png)
 
 
-#### About Page  
+#### About Us
 ![About](Screenshots/About.png)
 
 
