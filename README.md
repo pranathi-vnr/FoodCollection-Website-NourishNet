@@ -1,4 +1,4 @@
-# NourishNet
+# FoodCollection-Website-NourishNet
 
 **NourishNet** is a web-based platform designed to bridge the gap between food donors and recipient organizations, reducing food wastage and supporting communities in need.
 
