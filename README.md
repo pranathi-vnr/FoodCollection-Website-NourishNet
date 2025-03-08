@@ -35,7 +35,7 @@ npm install
 # Start the development server
 npm run dev
 
-Screenshots/About.png
+https://github.com/pranathi-vnr/FoodCollection-Website-NourishNet/blob/master/Screenshots/About.png?raw=true
 
 
 
