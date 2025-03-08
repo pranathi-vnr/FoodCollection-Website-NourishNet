@@ -48,10 +48,10 @@ npm run dev
 ![Welcome](Screenshots/Welcome.png)
 
 #### Donor Details Page  
-![Donor Details](Screenshots/donardetails.png)
+![Donor Details](Screenshots/donar details.png)
 
 #### Donate Money Page  
-![Donate Money](Screenshots/donatemoney.png)
+![Donate Money](Screenshots/donate money.png)
 
 #### Locations Page  
 ![Locations](Screenshots/locations.png)
