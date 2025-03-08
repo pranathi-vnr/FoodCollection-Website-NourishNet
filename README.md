@@ -35,7 +35,30 @@ npm install
 # Start the development server
 npm run dev
 
-https://github.com/pranathi-vnr/FoodCollection-Website-NourishNet/blob/master/Screenshots/About.png?raw=true
+```
+### Screenshots
+
+#### About Page  
+![About](screenshots/About.png)
+
+#### Login Page  
+![Login](screenshots/Login.png)
+
+#### Welcome Page  
+![Welcome](screenshots/Welcome.png)
+
+#### Donor Details Page  
+![Donor Details](screenshots/donar details.png)
+
+#### Donate Money Page  
+![Donate Money](screenshots/donate money.png)
+
+#### Locations Page  
+![Locations](screenshots/locations.png)
+
+#### Register Page  
+![Register](screenshots/register.png)
+
 
 
 
