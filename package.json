@@ -10,7 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@fortawesome/free-brands-svg-icons": "^6.6.0",
+    "@fortawesome/fontawesome-svg-core": "^6.7.1",
+    "@fortawesome/free-brands-svg-icons": "^6.7.1",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "bootstrap": "^5.3.3",
     "json": "^11.0.0",
