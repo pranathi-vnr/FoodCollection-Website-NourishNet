@@ -1,8 +1,39 @@
-# React + Vite
+# NourishNet
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**NourishNet** is a web-based platform designed to bridge the gap between food donors and recipient organizations, reducing food wastage and supporting communities in need.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Food Donors**: Individuals or organizations can list surplus food.
+- **Recipient Organizations**: NGOs and community groups can browse and claim available food donations.
+- **Monetary Donations**: Users can also donate money to support food distribution.
+- **Club Locator**: Users can find nearby food collection clubs to facilitate donations.
+
+## Getting Started
+
+Follow these steps to set up and run the project on your local machine.
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+- **Node.js** and **npm**
+- A code editor (**VS Code** recommended)
+
+### Installation
+
+```sh
+# Clone the repository
+git clone https://github.com/pranathi-vnr/FoodCollection-Website-NourishNet.git
+
+# Navigate to the project directory
+cd FoodCollection-Website-NourishNet
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+
+
+
