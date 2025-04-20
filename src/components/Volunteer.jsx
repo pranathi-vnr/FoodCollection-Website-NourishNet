@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import { useLocation } from 'react-router-dom';
-import './volunteer.css'
+import '../assets/volunteer.css';
 
 function Volunteer() {
     const obj = useLocation();
